@@ -3,16 +3,22 @@ using namespace std;
 
 class Reader
 {
-	public:
+	private:
 	int curPos;
 	char curChar;
 	string input;
 	
+	public:
 	Reader(string input = "")
 	{
 		this->input = input;
 		curPos = 0;
 		curChar = input[curPos];
+	}
+  
+	char getChar()
+	{
+		return curChar;
 	}
 	
 	void nextChar()
@@ -28,11 +34,12 @@ class Reader
 
 class Interpreter
 {
-	public:
+	private:
   int memory[1000];
 	int pointer;
 	Reader reader;
 	
+	public:
 	Interpreter(Reader reader)
 	{
 		this->reader = reader;
@@ -49,56 +56,52 @@ class Interpreter
 	
 	void interpret()
 	{
-		while(reader.curChar != '\0')
+		while(reader.getChar() != '\0')
 		{
-	  	if(reader.curChar == '<')
+	  	if(reader.getChar() == '<')
 	  	{
 	  		pointer--;
-		  	// cout << "LEFT " << pointer << endl;
 	  	}
-	  	else if(reader.curChar == '>')
+	  	else if(reader.getChar() == '>')
 	  	{
 		  	pointer++;
-		  	// cout << "RIGHT " << pointer << endl;
 		  }
-		  else if(reader.curChar == '+')
+		  else if(reader.getChar() == '+')
 	  	{
 		  	memory[pointer]++;
-		  	// cout << "PLUS " << to_string(memory[pointer]) << endl;
 		  }
-		  else if(reader.curChar == '-')
+		  else if(reader.getChar() == '-')
 	  	{
 		  	memory[pointer]--;
-		  	// cout << "MINUS " << to_string(memory[pointer]) << endl;
 		  }
-		  else if(reader.curChar == '.')
+		  else if(reader.getChar() == '.')
 	  	{
 		  	cout << "VALUE OF " << pointer << " IS " << to_string(memory[pointer]) << endl;
 		  }
-		  else if(reader.curChar == ',')
+		  else if(reader.getChar() == ',')
 	  	{
 	  	  cout << "INPUT : ";
 	  		cin >> memory[pointer];
 		  }
-		  else if(reader.curChar == '[')
+		  else if(reader.getChar() == '[')
 	  	{
 	  		if(memory[pointer] == 0)
 	  		{
-	  			while(reader.curChar != ']')
+	  			while(reader.getChar() != ']')
 	  			  reader.nextChar();
 	  		}
 		  }
-		  else if(reader.curChar == ']')
+		  else if(reader.getChar() == ']')
 	  	{
 	  		if(memory[pointer] != 0)
 	  		{
-	  			while(reader.curChar != '[')
+	  			while(reader.getChar() != '[')
 	  			  reader.previousChar();
 	  		}
 		  }
 		  else
 		  {
-		  	
+		  	// Just skip unknown charecters
 		  }
 		  
 		  reader.nextChar();
