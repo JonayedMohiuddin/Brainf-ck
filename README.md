@@ -1,5 +1,5 @@
 # Brainf-ck
-This is a `BRAINF-CK LANGUAGE INTERPRETER` written on c++.It is a minimalist language made by Urban Müller in 1993 just for fun and challenging coders.
+This is a `BRAINF-CK LANGUAGE INTERPRETER` written on c++.Brainfuck is a minimalist language made by Urban Müller in 1993 just for fun and challenging coders.
 
 ## SYNTAX
 BRAINF-CK LANGUAGE has `EIGHT SYMBOLS` in total:
