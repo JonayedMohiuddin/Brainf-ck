@@ -1,0 +1,7 @@
+﻿Hi! I am Jonayed. This is output of an brainfuck code. 
+Of course! it is not hand written(I dont have that much patience).
+This is possible by a function written in C++ which converts a print statement into brainf**k code. 
+But it can't create an efficient code as, it can't leave a memory foot print behind.
+Because it can cause problem in latter brainfuck codes. So the method keeps the memory clean :).
+* This string to brainfuck tanspiler can be even better and efficient.
+* So if you have any advice please contact me : jonayedmohiuddin@gmail.com
