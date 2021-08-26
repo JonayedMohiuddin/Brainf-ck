@@ -12,3 +12,13 @@ BRAINF-CK LANGUAGE has `EIGHT SYMBOLS` in total:
 - `,`	Accept one byte of input, Store its value in the pointing byte.
 - `[`	If the byte at the data pointer is zero, then instead of moving the instruction pointer forward to the next command, jump it forward to the command after the matching ] command.
 - `]`	If the byte at the data pointer is nonzero, then instead of moving the instruction pointer forward to the next command, jump it back to the command after the matching [ command.
+
+# Output Mode
+The default output mode of this interpreter is __Memory Format__. In memory format output is printed as follows:
+```MEM[12] = 65```
+You can change the output mode via a directive using $.Put $ and write the mode name after it. Only writting first letter of the mode also works. All output modes supported yet are 
+| Name        | Command           | Example Output |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
