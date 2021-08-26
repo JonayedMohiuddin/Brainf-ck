@@ -6,7 +6,7 @@ BRAINF-CK LANGUAGE has `EIGHT SYMBOLS` in total:
 
 | SYMBOL | ACTION        |
 |:------:|:--------------:| 
-| `>`    | Increment the data pointer (to point to the next cell to the right).
+| __`>`__| Increment the data pointer (to point to the next cell to the right).
 | `<`    | Decrement the data pointer (to point to the next cell to the left).
 | `+`    | Increment (increase by one) the byte at the data pointer.
 | `-`    | Decrement (decrease by one) the byte at the data pointer.
