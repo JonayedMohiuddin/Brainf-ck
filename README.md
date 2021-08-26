@@ -20,8 +20,8 @@ The default output mode of this interpreter is __Memory Format__. In memory form
 ```MEM[12] = 65```
 You can change the output mode via a directive using $.Put $ and write the mode name after it. Only writting first letter of the mode also works. All output modes supported yet are 
 | Output Type   | Command        | Demo Output  |
-| :------------ |:--------------:| :-----------:|
-| MEMORY TYPE*  | $MEMORY or $M  | MEM[2] = 65  |
+| :------------ |:-------------- | :-----------:|
+| MEMORY TYPE*  | $MEMORY  or $M | MEM[2] = 65  |
 | DECIMAL       | $DECIMAL or $D |      65      |
-| ASCII         | $ASCII or $A   |       A      |
+| ASCII         | $ASCII   or $A |       A      |
 
