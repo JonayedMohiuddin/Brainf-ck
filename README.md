@@ -23,6 +23,7 @@ You can change the output mode via a directive using $.Put $ and write the mode 
 | :------------ |:-------------- | :-----------:|
 | MEMORY TYPE*  | $M or $MEMORY  | MEM[2] = 65  |
 | DECIMAL       | $D or $DECIMAL |      65      |
-| ASCII         | $A or $ASCII   |       A      
+| ASCII         | $A or $ASCII   |       A      |
+
 \* - is the default output mod
 
