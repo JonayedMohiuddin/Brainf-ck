@@ -76,3 +76,6 @@ Pointer :   ^
 ```
 Output: 
 ```Hello World!```
+
+## `BONUS`:
+This interpreter comes with a transpiler which takes a string and converts into a brainf-ck code which prints the givern string.
