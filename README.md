@@ -36,8 +36,8 @@ You can change the output mode via a directive using $.Put $ and write the mode 
 
 ## Examples
 # Hello World
-Just type: `$ g++ -o brainfuck.c < hello.bf`
-and then : `$ ./brainfuck`
+`$ g++ brainfuck.c -o brainfuck`</br>
+`$ ./brainfuck hello.bf`
 ```
 $ASCII
 #  Source : Wikipedia
