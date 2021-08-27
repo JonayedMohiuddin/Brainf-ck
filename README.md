@@ -28,6 +28,12 @@ You can change the output mode via a directive using $.Put $ and write the mode 
 
 \* - is the default output mode
 
+## How to run brainfuck codes
+- From terminal:</br>
+  - Write `$ g++ brainfuck.cpp -o brainfuck` once to compile the brainfuck interpreter.
+  - Write `$ ./brainfuck filename.bf` to interpret the filename.bf brainf-ck code.
+  - or Write `$ ./brainfuck` only after that type your code in the terminal output.
+
 ## Examples
 # Hello World
 Just type: `$ g++ -o brainfuck.c < hello.bf`
